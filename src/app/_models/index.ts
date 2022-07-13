@@ -1,6 +1,0 @@
-export * from './alert'
-export * from './user'
-export * from './category'
-export * from './post'
-export * from './profile'
-export * from './Image'
