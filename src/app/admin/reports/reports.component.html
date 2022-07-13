@@ -1,13 +1,21 @@
-<div class="pro">
-  <p class="text-center">Categories list</p>
-  <div class="row">
-    <div class="col-md-8">
-      <ul *ngFor="let report of admin_reportlist;let i = index;" id="row">
-        <li class="card px-2">{{report.type}}</li>
+
+<div class="progressBar">
+  <p align="center"><b>Categories</b></p>
+  <div>
+
+      <ul *ngFor="let report of admin_reportlist;let i = index;">
+        <li >{{report.type}}</li>
+
       </ul>
     </div>
-    <div class="col-md-4">
-      <a href="" class="btn btn-primary">Create</a>
+    <div class="d-flex justify-content-center mb-2">
+      <a
+        routerLink="/category-form"
+        href="#"
+        class="btn btn-light btn-lg"
+      >
+        Add Category</a
+      >
     </div>
   </div>
-</div>
+

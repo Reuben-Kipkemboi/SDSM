@@ -1,8 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
-*{
-    font-family: 'Roboto Slab', serif;
-}
 
 .bulb{
     background-image: url("src/assets/images/logo2.jpeg");
