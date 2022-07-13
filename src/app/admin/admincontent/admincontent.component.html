@@ -1,18 +1,32 @@
-
 <div class="post_details">
-  <div class="card" style="width:120%;background-color:#D9D9D9;"><h4 style="margin-bottom:20px;" align="center">Content</h4>
+  <div class="card p-2" style="background-color:#D9D9D9;">
+    <h5 style="margin-bottom:20px;" align="center">Application Posts</h5>
     <ul *ngFor="let post of postArr,let i = index;">
       <li *ngIf="i < 4">
-        {{post.content_name}}
-
-        <a routerLink="/post-details/{{post.id}}/" class="btn view-details" >
-          View
-        </a>
-
-        <a (click)="deleteAdmin_post(post.id)" style="cursor: pointer;margin-left:5px;"><i class="fa fa-trash text-danger"></i></a>
+        <div class="card p-4">
+          <div class="row">
+            <div class="col-md-11">
+              <div class="row">
+                <div class="col-md-9">
+                  {{post.content_name}}
+                </div>
+                <div class="col-md-3">
+                  <a routerLink="/post-details/{{post.id}}/" class="btn view-details">
+                    View
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-1">
+              <a (click)="deleteAdmin_post(post.id)" style="cursor: pointer;margin-left:5px;"><i
+                  class="fa fa-trash text-danger mt-1 fa-2x"></i></a>
+            </div>
+          </div>
+        </div>
 
       </li>
-    </ul></div>
+    </ul>
+  </div>
 
 
 </div>
@@ -25,6 +39,3 @@
     </div>
 
 </mat-grid-tile> -->
-
-
-

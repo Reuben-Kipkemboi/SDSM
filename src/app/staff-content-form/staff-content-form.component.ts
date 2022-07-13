@@ -174,7 +174,7 @@ export class StaffContentFormComponent implements OnInit {
   //     // (data: any) => console.log(data),
   //     // (error: any) => console.log(error)
   //     ();
-  // }
+  }
 
 
 }

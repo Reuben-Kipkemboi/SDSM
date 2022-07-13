@@ -70,7 +70,6 @@
   <mat-grid-tile rowspan="1" colspan="2" >
     <div id="members" >Members
       <div class="mem" style="background-color:#3BB7E5"></div>
-      cvt
       <div class="mem" style="background-color:#5270FC"></div>
       <div class="mem" style="background-color: white"></div>
     </div>
@@ -80,8 +79,8 @@
 
   <mat-grid-tile rowspan="2" colspan="2" style="background-color:white">
     <div class="user_display" >
-      <ul *ngFor="let user of userslist;let i = index;"> <li style="background-color:#D9D9D9; width:20rem;
-        " *ngIf="i < 4">{{ user.username }}</li>
+      <ul *ngFor="let user of userslist;let i = index;"> <li style="background-color:#D9D9D9; width:20rem; margin-left:-30px;
+        " *ngIf="i < 4" class="card">{{ user.username }}</li>
       </ul>
       </div>
 
